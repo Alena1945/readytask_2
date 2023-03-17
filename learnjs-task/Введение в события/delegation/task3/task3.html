@@ -1,0 +1,94 @@
+<!-- Сделать таблицу сортируемой: при клике на элемент <th> строки таблицы должны сортироваться по соответствующему столбцу.
+
+Каждый элемент <th> имеет атрибут data-type:
+
+<table id="grid">
+    <thead>
+    <tr>
+        <th data-type="number">Возраст</th>
+        <th data-type="string">Имя</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>5</td>
+        <td>Вася</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>Петя</td>
+    </tr>
+    ...
+    </tbody>
+</table>
+В примере выше первый столбец содержит числа, а второй – строки. Функция сортировки должна это учитывать, ведь числа сортируются иначе, чем строки.
+
+Сортировка должна поддерживать только типы "string" и "number".
+
+Работающий пример:
+
+
+P.S. Таблица может быть большой, с любым числом строк и столбцов. -->
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./task3.css">
+</head>
+
+<body>
+
+  <table id="grid">
+    <thead>
+      <tr>
+        <th data-type="number">Возраст</th>
+        <th data-type="string">Имя</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>5</td>
+        <td>Вася</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Петя</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>Женя</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Маша</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Илья</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+    grid.addEventListener('click', (event) => {
+        if(event.target.tagName !== 'TH') {return}
+        let tbody = grid.querySelector('tbody');
+        let index = event.target.cellIndex;
+        let type = event.target.dataset.type;
+        let rows = Array.from(tbody.rows);
+        let sortedRows;
+        if (type === 'string') {
+            sortedRows = rows.sort((rowA, rowB) => rowA.cells[index].textContent.localeCompare(rowB.cells[index].textContent));
+        }
+        if (type === 'number') {
+            sortedRows = rows.sort((rowA, rowB) => rowA.cells[index].textContent - rowB.cells[index].textContent);
+        }
+        tbody.append(...sortedRows);
+    });
+
+  </script>
+
+</body>
+</html>

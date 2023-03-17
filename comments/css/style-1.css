@@ -1,0 +1,370 @@
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+.page_wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.VerticalTab.VerticalTab_hash_scroll.VerticalTab_6.tabs_ver_6 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+.image-bg {
+    max-width: 100%;
+    height: 100%;
+    background-color: #7a7a7a;
+}
+
+.resp-tab-content {
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.resp-tabs-list.hor_1 {
+  margin-top: -39px;
+}
+
+.home-container {
+  margin-top: 28.5%;
+  margin-bottom: 10%;
+  background-color: #fff;
+  height: 352px;
+}
+
+.home-container .left-content {
+    padding-top: 25%;
+    padding-left: 35px;
+}
+
+.home-container .left-content .left-line {
+    width: 3px;
+    height: 74px;
+    background-color: #121212;
+    float: left;
+    margin-right: 15px;
+}
+
+.home-container .left-content h2 {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: #121212;
+    text-transform: uppercase;
+    margin: 0px;
+    font-weight: 900;
+}
+
+.home-container .left-content h2 em {
+    font-style: normal;
+    color: #f78b26;
+  }
+
+.home-container .left-content p {
+    margin-top: 30px;
+    font-size: 14px;
+    font-style: italic;
+    color: #343434;
+}
+
+.home-container .left-content p em {
+    font-weight: 500;
+}
+
+.home-container .left-content .primary-button {
+    margin-top: 30px;
+}
+
+.home-container .left-content .primary-button a {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #121212;
+    border: 1px solid #343434;
+    padding: 11px 14px;
+}
+
+.home-container .left-content .primary-button a:hover {
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    border-color: #f78b26;
+    color: #f78b26;
+    text-decoration: none;
+}
+
+.home-container .right-content {
+      margin-bottom: -1px;
+}
+
+ .home-container .right-content img {
+    overflow: hidden;
+    width: 100%;
+} 
+
+.about-container {
+  text-align: center;
+  background-color: #fff;
+  margin-top: 24%;
+}
+
+.about-container h2 {
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  color: #121212;
+  text-transform: uppercase;
+  margin: 40px;
+  margin-bottom: 0px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.about-container h2 em {
+  font-style: normal;
+  color: #f78b26;
+}
+
+.about-container .under-line {
+  width: 60px;
+  height: 3px;
+  background-color: #121212;
+  margin: 15px auto 20px auto;
+}
+
+.about-container p {
+  font-size: 14px;
+  color: #343434;
+  margin: 15px 35px 30px 35px;
+}
+
+.about-container p em {
+  font-weight: 500;
+  font-style: normal;
+}
+
+.about-container img {
+  width: 100%;
+}
+
+
+.contact-container {
+  background-color: #fff;
+  margin-top: 29.5%;
+}
+
+.contact-form {
+  padding: 0px 0px 0px 30px;
+  text-align: center;
+}
+
+.contact-form h2 {
+  margin-top: -50px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: #f78b26;
+}
+
+.contact-form input {
+  margin-bottom: 20px;
+  padding-left: 15px;
+  width: 100%;
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+  font-size: 13px;
+  color: #aaa;
+  background-color: #f4f4f4;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.contact-form textarea {
+  margin-bottom: 20px;
+  padding-left: 15px;
+  width: 100%;
+  max-width: 100%;
+  max-height: 180px;
+  height: 140px;
+  display: inline-block;
+  line-height: 40px;
+  font-size: 13px;
+  color: #aaa;
+  background-color: #f4f4f4;
+  border: none;
+  outline: none!important;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.contact-form button {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #121212;
+  border: 1px solid #343434;
+  background-color: transparent;
+  padding: 11px 14px;
+  outline: none;
+  margin-bottom: 30px;
+  border-radius: 0;
+}
+
+.contact-form button:hover {
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  border-color: #f78b26;
+  color: #f78b26;
+  text-decoration: none;
+}
+
+.more-info {
+  padding: 36px 30px 0px 0px;
+}
+
+.more-info p em {
+  font-weight: 600;
+  font-style: normal;
+} 
+
+.listComment {
+  width: 50px;
+  height: 50px;
+}
+
+.time-right.right {
+  font-family: "Open Sans", sans-serif;
+
+  white-space: nowrap;
+}
+
+.output {
+  font-family: "Open Sans", sans-serif;
+
+  border: 1px solid #f4f4f4;
+  text-align: left;
+  width: 298px;
+
+  margin-bottom: 13px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  color: #aaa;
+  background-color: #f4f4f4;
+}
+
+.clean-button {
+  width: 25px;
+}
+.like-button {
+  width: 25px;
+}
+
+footer {
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+footer p {
+  font-size: 13px;
+  color: #7a7a7a;
+  padding: 20px 0px 15px 0px;
+  margin: 0px;
+}
+
+footer p em {
+  font-style: normal;
+  color: #f78b26;
+}
+
+
+@media (max-width: 768px){
+
+  .VerticalTab {
+    padding-bottom: 30px;
+  }
+
+  .responsive-logo {
+    width: 100%;
+    text-align: center;
+    margin: 45px 0px 30px 0px;
+  }
+
+  .responsive-logo img {
+    max-width: 100%;
+  }
+
+  .home-container {
+    margin-top: 0%;
+    text-align: center;
+  }
+
+  .home-container .left-content {
+    padding: 40px 35px;
+  }
+
+  .home-container .left-line {
+    display: none;
+  }
+
+  .home-container .right-content {
+    margin-left: 0;
+  }
+
+  .home-container .right-content img {
+    width: 100%;
+  }
+
+  .about-container {
+    margin-top: 0%;
+  }
+
+  .contact-container {
+    margin-top: 0%;
+  }
+
+  .contact-form h2 {
+    margin-top: 30px;
+  }
+  .more-info {
+    padding: 0px 30px 30px 30px;
+  }
+}
+
+@media (max-width: 991px){
+  .home-container {
+    margin-bottom: 60px;
+  }
+  .home-container .left-content {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .home-container .left-content .left-line {
+    display: none;
+  }
+
+  .contact-container  {
+    margin-bottom: 60px;
+  }
+
+  .contact-form {
+    padding: 0px 30px;
+  }
+
+  .more-info {
+    padding: 0px 30px 30px 30px;
+  }
+}

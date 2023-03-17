@@ -1,0 +1,74 @@
+<!-- Создайте дерево, которое по клику на заголовок скрывает-показывает потомков:
+
+Использовать только один обработчик событий (применить делегирование)
+Клик вне текста заголовка (на пустом месте) ничего делать не должен. -->
+
+<!DOCTYPE HTML>
+<html>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./task2.css">
+</head>
+<body>
+
+  <ul class="tree" id="tree">
+    <li>Животные
+      <ul>
+        <li>Млекопитающие
+          <ul>
+            <li>Коровы</li>
+            <li>Ослы</li>
+            <li>Собаки</li>
+            <li>Тигры</li>
+          </ul>
+        </li>
+        <li>Другие
+          <ul>
+            <li>Змеи</li>
+            <li>Птицы</li>
+            <li>Ящерицы</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Рыбы
+      <ul>
+        <li>Аквариумные
+          <ul>
+            <li>Гуппи</li>
+            <li>Скалярии</li>
+          </ul>
+        </li>
+        <li>Морские
+          <ul>
+            <li>Морская форель</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <script>
+    let elements = document.querySelectorAll('li');
+
+    elements.forEach((element) => {
+    let content = element.firstChild.textContent;
+    element.firstChild.textContent = '';
+    element.insertAdjacentHTML('afterbegin', `<span>${content}</span>`);
+    })
+
+    tree.addEventListener('click', (event) => {
+  
+        if(event.target.tagName !== 'SPAN') {
+            return;
+        }
+        
+        let childList = event.target.closest('li').lastElementChild;
+
+        if(childList.tagName === 'UL') {
+            childList.hidden = !childList.hidden;
+        }
+    })
+  </script>
+
+</body>
+</html>

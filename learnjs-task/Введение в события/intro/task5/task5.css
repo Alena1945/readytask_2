@@ -1,0 +1,35 @@
+body {
+    margin: 10px auto;
+    width: 470px;
+    }
+    
+    .box__pane {
+    background: #edf5e1;
+    padding: 10px 20px 10px;
+    border-top: 2px solid #c4df9b;
+    position: relative;
+    }
+    
+    .box__title {
+    margin: 0;
+    padding-bottom: .3em;
+    font-size: 1.1em;
+    }
+    
+    .box__text {
+    margin: 0;
+    padding: 0 0 .5em;
+    }
+    
+    .remove-button {
+    font-size: 110%;
+    color: darkred;
+    right: 10px;
+    top: 2px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: transparent;
+    cursor: pointer; 
+    display: none;
+}
